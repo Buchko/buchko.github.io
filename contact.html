@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="Resources/CSS/contactc.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="galleria/galleria-1.5.7.min.js"></script>
+    <style>
+        .galleria{ width: 700px; height: 400px; background: rgb(207,186,88); }
+    </style>
+</head>
+<body>
+	<div class="nav-container-right">
+        <a href="home.html" class="nav-item">Home</a>
+        <a href="resume.html" class="nav-item">Resume</a>
+        <a href="extra.html" class="nav-item">Extra-Curricular</a>
+        <a href="future.html" class="nav-item">Next Steps</a>
+        <a href="contact.html" class="nav-item current">Contact</a>
+    </div>
+    <div class="nav-container-left">
+        <img src="Images/logoinversed.png" class="nav-logo" alt="logo">
+         <p class="nav-name">Alexander Buchko</p>
+    </div>
+    <div class="content">
+		<h1 class="title">Let's Keep in Touch</h1>
+        <div class="galleria">
+            <img src="Resources/Images/snowp.JPG">
+            <img src="Resources/Images/senategroup.JPG">
+            <img src="Resources/Images/render.jpg">
+            <img src="Resources/Images/promgroup.png">
+        </div>
+        <script>
+            (function() {
+                Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria');
+            }());
+        </script>
+    </div>
+    <div class="dark-content">
+        <p class="social"><a href="https://twitter.com/BuchkoAlex">TW<b style="color: rgb(29,161,242)">.</b></a> <a href="https://www.instagram.com/alexcbuchko/">IG<b style="color:rgb(202,45,141);">.</b></a> <a href="https://www.linkedin.com/in/alexbuchko/">LN<b style="color: rgb(40,62,74);">.</b></a> <a href="mailto:alexcbuchko@gmail.com">GM<b style="color:rgb(217,48,37);">.</b></a></p>
+    </div>
+    <div class="shadow-wrapper"></div>
+</body>
+</html>

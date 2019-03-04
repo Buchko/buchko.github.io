@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*CSS Resets Above* */
+
+body{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-rows: minmax(50px, 10vmin) 100px minmax(100px, auto);
+}
+
+.nav-container-right{ /* To get some elements align to the right and some to the left, I created two overlapping divs with oppsite aligning propeties. This is pretty hacky, but it works.*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.nav-container-left{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    background-color: transparent;
+    height: 100px; /*placeholder value*/
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+}
+.nav-logo{
+    height: 100%;
+    margin-left: 30px;
+}
+.nav-name{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+}
+.nav-item{
+    padding: 1em 1.5em;
+    border: 1px solid white;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    text-decoration: inherit;
+}
+a:hover{
+    background-color: rgb(207,186,88);
+    color: black;
+    border: 1px solid black;
+}
+
+.content{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: whitesmoke;
+    border-radius: 0 0 10px 10px;
+}
+.welcome{
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    }
+.autobio-container{
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+}
+.autobio{
+    font-family: 'Raleway', 'Yu Gothic', sans-serif;
+    text-align: left;
+    line-height: 1.5em;
+    color: white;
+    padding: 1em 4em 1em 4em;
+    max-width: 50em;
+    margin: auto;
+}
+.gold-link{
+    color: rgb(207,186,88);
+    text-decoration: underline;
+}
+.shadow-wrapper{
+    grid-area: 2 / 2 / 4 / 3;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    background-color: transparent;
+}
+.current{ /* This must go last as it overwrites the above display of the button that links to the current page*/
+    border: 1px solid rgb(207,186,88);
+    color: rgb(207,186,88);
+}
+.galleria{
+    margin: auto;
+    margin-bottom: 6em;
+}
